@@ -1,0 +1,17 @@
+{% extends 'service.html'%}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/table.css') }}">
+{% endblock %}
+{% block tittle_1 %}
+Fava Engine 
+{% endblock %}
+{% block body_1 %}
+<h1> {{ stack }} </h1>
+    
+    <pre>
+        {{ task }}
+    </pre>
+
+    <div style="padding-bottom: 100px;"></div>
+{% endblock %}

@@ -1,0 +1,167 @@
+{% extends 'service.html'%}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/table.css') }}">
+{% endblock %}
+{% block tittle_1 %}
+Fava Version
+{% endblock %}
+{% block body_1 %}
+
+<h2>QMF </h2>
+<div id="ajax">
+<div class="table100 ver1 m-b-110">
+    <div class="table100-head">
+        <table>
+            <thead>
+                <tr class="row100 head">
+                    <th class="cell100 column1">Stack</th>
+                    <th class="cell100 column2">Description</th>
+                    <th class="cell100 column3">Version</th>
+                    <th class="cell100 column4">Fava Engine</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="table100-body js-pscroll ps ps--active-y">
+        <table>
+            <tbody>
+                {% for task in tasks_qmf %}
+                <tr class="row100 body">
+                    <td class="cell100 column1">{{task.stack}}</td>
+                    <td class="cell100 column2"></td>
+                    <td class="cell100 column3">{{task.version}}</td>
+                    <td class="cell100 column4"><a href="/fengine/{{task.stack}}"> Open</a></td>
+                    {% endfor %}
+                </tr>
+            </tbody>
+        </table>
+        <div class="ps__rail-x" style="left: 0px; bottom: -281px;">
+            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+        </div>
+        <div class="ps__rail-y" style="top: 281px; right: 5px;">
+            <div class="ps__thumb-y" tabindex="0" style="top: 141px;"></div>
+        </div>
+    </div>
+</div>
+
+
+<h2>QMN </h2>
+<div class="table100 ver1 m-b-110">
+    <div class="table100-head">
+        <table>
+            <thead>
+                <tr class="row100 head">
+                    <th class="cell100 column1">Stack</th>
+                    <th class="cell100 column2">Description</th>
+                    <th class="cell100 column3">Version</th>
+                    <th class="cell100 column4">Fava Engine</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="table100-body js-pscroll ps ps--active-y">
+        <table>
+            <tbody>
+                {% for task in tasks_qmn %}
+                <tr class="row100 body">
+                    <td class="cell100 column1">{{task.stack}}</td>
+                    <td class="cell100 column2"></td>
+                    <td class="cell100 column3">{{task.version}}</td>
+                    <td class="cell100 column4"><a href="/fengine/{{task.stack}}"> Open</a></td>
+                    {% endfor %}
+                </tr>
+            </tbody>
+        </table>
+        <div class="ps__rail-x" style="left: 0px; bottom: -281px;">
+            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+        </div>
+        <div class="ps__rail-y" style="top: 281px; right: 5px;">
+            <div class="ps__thumb-y" tabindex="0" style="top: 141px;"></div>
+        </div>
+    </div>
+</div>
+
+<div class="table100 ver1 m-b-110">
+    <div class="table100-head">
+        <table>
+            <thead>
+                <tr class="row100 head">
+                    <th class="cell100 column1">Stack</th>
+                    <th class="cell100 column2">Description</th>
+                    <th class="cell100 column3">Version</th>
+                    <th class="cell100 column4">Fava Engine</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="table100-body js-pscroll ps ps--active-y">
+        <table>
+            <tbody>
+                {% for task in tasks_qmnj %}
+                <tr class="row100 body">
+                    <td class="cell100 column1">{{task.stack}}</td>
+                    <td class="cell100 column2"></td>
+                    <td class="cell100 column3">{{task.version}}</td>
+                    <td class="cell100 column4"><a href="/fengine/{{task.stack}}"> Open</a></td>
+                    {% endfor %}
+                </tr>
+            </tbody>
+        </table>
+        <div class="ps__rail-x" style="left: 0px; bottom: -281px;">
+            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+        </div>
+        <div class="ps__rail-y" style="top: 281px; right: 5px;">
+            <div class="ps__thumb-y" tabindex="0" style="top: 141px;"></div>
+        </div>
+    </div>
+</div>
+
+<h2>QCG </h2>
+<div class="table100 ver1 m-b-110">
+    <div class="table100-head">
+        <table>
+            <thead>
+                <tr class="row100 head">
+                    <th class="cell100 column1">Stack</th>
+                    <th class="cell100 column2">Description</th>
+                    <th class="cell100 column3">Version</th>
+                    <th class="cell100 column4">Fava Engine</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="table100-body js-pscroll ps ps--active-y">
+        <table>
+            <tbody>
+                {% for task in tasks_qcg %}
+                <tr class="row100 body">
+                    <td class="cell100 column1">{{task.stack}}</td>
+                    <td class="cell100 column2"></td>
+                    <td class="cell100 column3">{{task.version}}</td>
+                    <td class="cell100 column4"><a href="/fengine/{{task.stack}}"> Open</a></td>
+                    {% endfor %}
+                </tr>
+            </tbody>
+        </table>
+        <div class="ps__rail-x" style="left: 0px; bottom: -281px;">
+            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+        </div>
+        <div class="ps__rail-y" style="top: 281px; right: 5px;">
+            <div class="ps__thumb-y" tabindex="0" style="top: 141px;"></div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div style="padding-bottom: 100px;"></div>
+
+<script>
+    setInterval(function()
+    {
+    $('#ajax').load(document.URL +  ' #ajax');
+    }, 60000)
+
+</script>
+{% endblock %}
+
